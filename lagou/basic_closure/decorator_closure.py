@@ -10,14 +10,14 @@ import time
 def record_time(func):
     def wrapper(*kwargs):
         print('function start at {}'.format(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())))
-        time.sleep(4)
+        time.sleep(2)
         inner_ret = func(*kwargs)
         print('function end at {}'.format(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())))
         return inner_ret
     return wrapper
 
 @record_time
-def sum_dec(*kwargs):
+def sum_dec(*kwargs):                                                                                                                               
     sum = 0
     for item in kwargs:
         sum += item

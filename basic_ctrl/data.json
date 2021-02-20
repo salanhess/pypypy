@@ -1,0 +1,49 @@
+{
+    "test_env_online_hb_9": {
+        "domain": "http://zbs-api.hb.test.com/zbs-server", 
+        "verbose": true, 
+        "retry_snap": 20, 
+        "is_specification": true, 
+        "logdir": "log", 
+        "copy_region": "cn-south-1", 
+        "createjcs": {
+            "resource_hint": "fpga=test", 
+            "instance_type": "g.n4.large", 
+            "subnet_id": "subnet-1", 
+            "_comment": "centos 7.6 x64:VPC4PressionTest \uff08vpc-6rxcn47m35\uff09 \u300b sub3PressionTest \uff08subnet-76bycqlab9\uff09", 
+            "availability_zone": "prod_bj04", 
+            "volume_type": "hdd", 
+            "image_id": "img-1", 
+            "source_type": "normal", 
+            "include_host": "11", 
+            "provider": "ISPBGP", 
+            "security_group": "sg-1", 
+            "vpc_id": "vpc-1", 
+            "password": "ThisPasswd1!"
+        }, 
+        "db_port": "3306", 
+        "ccsdomain": "cc-server.bj02.xx.com", 
+        "retry_vol": 20, 
+        "step": 3000, 
+        "db_name": "zbs_global_zbs3", 
+        "hack_verbose": false, 
+        "logfile": "/log", 
+        "attachip": [
+            "_", 
+            "_"
+        ], 
+        "jcsdomain": "api.jcs.cn-north-1.xx.com", 
+        "admin": true, 
+        "tenant_id": "49", 
+        "jcs_maps": {
+            "vol-instanceid": {
+                "instanceid": "i-1", 
+                "soc_ip": "11", 
+                "fip": "fip-1", 
+                "fip_addr": "11"
+            }
+        }, 
+        "db": "global", 
+        "sleep_time": 20
+    }
+}
